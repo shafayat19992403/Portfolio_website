@@ -21,6 +21,7 @@ export const Projects = () => {
       title: "Portfolio Website",
       description: "A protfolio website mnade using react and TailwindCSS.",
       techStack: ["ReactJS", "TailwindCSS"],
+      link: "https://github.com/shafayat19992403/Portfolio_website",
     },
     {
       title: "Football Club Management",
@@ -80,6 +81,55 @@ export const Projects = () => {
       ],
       link: "https://github.com/shafayat19992403/Spam_Email_Detector",
     },
+    {
+      title: "C Compiler Implementation",
+      description:
+        "In this project, I implemented a subset of the C programming language compiler using C++. The compiler processes C code and generates corresponding intermediate code. I used Flex and Bison for lexical analysis and parsing.",
+      techStack: ["C++", "Flex", "Bison"],
+      link: "https://github.com/shafayat19992403/C-Compiler-Implementation",
+    },
+    {
+      title: "Network Simulator-3",
+      description:
+        "Implemented a Congestion Control Algorithm - TCP Adaptive Reno in NS-3, a network simulator used to model and analyze networking protocols and scenarios.",
+      techStack: ["C", "NS-3"],
+      link: "https://github.com/shafayat19992403/NS3",
+    },
+    {
+      title: "Error Detection and Correction",
+      description:
+        "In this project, I implemented error detection (using CRC checksum) and error correction (using Hamming distance), which is a part of the data link layer.",
+      techStack: ["C++"],
+      link: "https://github.com/shafayat19992403/Error-Detection-and-Correction",
+    },
+    {
+      title: "Design Patterns Implementation",
+      description:
+        "In this project, I implemented several Creational, Structural, and Behavioral Design Patterns, demonstrating a solid understanding of object-oriented design principles.",
+      techStack: ["Java"],
+      link: "https://github.com/shafayat19992403/Design-Pattern-Implementation",
+    },
+    {
+      title: "File Server System",
+      description:
+        "Developed a multi-client file server where users can upload, download, and request files. Implemented authentication to ensure unique usernames and prevent duplicate logins. Designed a directory-based storage system for user-specific file management. Enabled real-time file requests and messaging between clients using server-side broadcasting. Implemented file access control (private/public) and tracking of online/offline users.",
+      techStack: ["C++", "Java", "Sockets", "Multi-Threading"],
+      link: "https://github.com/shafayat19992403/File-Server-System",
+    },
+    {
+      title: "Cryptosystem Implementation",
+      description:
+        "Independently implemented AES encryption with Cipher Block Chaining (CBC) mode for secure data transmission. Developed an Elliptic Curve Diffie-Hellman (ECDH) key exchange mechanism for secure key generation. Integrated encryption and key exchange into a real-time communication system using socket programming. Ensured confidentiality and integrity of messages over a network using cryptographic best practices.",
+      techStack: ["Python"],
+      link: "https://github.com/shafayat19992403/CryptoSystem-Implementation",
+    },
+    {
+      title: "Ray Tracing with OpenGL",
+      description:
+        "Bitmap images are rendered using ray tracing and Phong Illumination model from any position of 3D geometric shapes like plane, sphere, triangle, pyramid, and cube.",
+      techStack: ["C++", "OpenGL"],
+      link: "https://github.com/shafayat19992403/Ray-Tracing-OpenGL",
+    },
   ];
   return (
     <section
@@ -87,7 +137,7 @@ export const Projects = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+        <h2 className="text-center text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
           Notable Projects
         </h2>
 
@@ -99,7 +149,7 @@ export const Projects = () => {
             >
               <h3 className="text-xl font-bold mb-2">{pro.title}</h3>
               <p className="text-gray-400 mb-4">{pro.description}</p>
-              <div>
+              <div className="flex flex-wrap">
                 {pro.techStack.map((tech, key) => (
                   <span
                     key={key}

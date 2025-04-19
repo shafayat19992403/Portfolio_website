@@ -47,7 +47,7 @@ export const About = () => {
       className="min-h-screen flex items-center justify-center py-20"
     >
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
+        <h2 className="text-center text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
           About Me
         </h2>
 
@@ -138,15 +138,26 @@ export const About = () => {
             <ul className="list-disc list-inside text-gray-300 space-y-2">
               <li>
                 <strong>B.Sc in Computer Science and Engineering</strong> -
-                Bangladesh University of Engineering and Technology (2020-2025)
+                Bangladesh University of Engineering and Technology (2020-2025){" "}
+                <strong>CGPA:</strong> 3.76/4.00
               </li>
               <li>
                 <strong>Higher Secondary Certificate</strong> - Notre Dame
                 College, Dhaka (2017-2019)
+                <ul>
+                  <li>
+                    <strong>GPA:</strong> 5.00/5.00
+                  </li>
+                </ul>
               </li>
               <li>
                 <strong>Secondary School Certificate</strong> - Mymensingh Zilla
                 School, Mymensingh (2015-2017)
+                <ul>
+                  <li>
+                    <strong>GPA:</strong> 5.00/5.00
+                  </li>
+                </ul>
               </li>
             </ul>
           </div>
