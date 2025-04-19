@@ -4,6 +4,8 @@ import { LoadingScreen } from "./components/LoadingScreen";
 import "./index.css";
 import { Navbar } from "./components/Navbar";
 import { MobileMenu } from "./components/MobileMenu";
+import { Home } from "./components/sections/home";
+import { About } from "./components/sections/about";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,9 +16,12 @@ function App() {
         className={`min-h-screen transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
         } bg-black text-grey-100`}
-      ></div>
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Navbar>
-      <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}></MobileMenu>
+      >
+        <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Navbar>
+        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen}></MobileMenu>
+        <Home></Home>
+        <About></About>
+      </div>
     </>
   );
 }
