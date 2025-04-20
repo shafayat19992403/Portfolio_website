@@ -7,6 +7,8 @@ import { MobileMenu } from "./components/MobileMenu";
 import { Home } from "./components/sections/home";
 import { About } from "./components/sections/about";
 import { Projects } from "./components/sections/projects";
+import { Contact } from "./components/sections/contact";
+import { Footer } from "./components/Footer";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,6 +25,8 @@ function App() {
         <Home></Home>
         <About></About>
         <Projects></Projects>
+        <Contact></Contact>
+        <Footer></Footer>
       </div>
     </>
   );
