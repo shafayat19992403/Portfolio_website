@@ -3,13 +3,6 @@ import { RevealOnScroll } from "./RevealOnScroll";
 export const Projects = () => {
   const projects = [
     {
-      title: "Cloud Platform",
-      description:
-        "Scalable cloud infrastructure management with real-time monitoring and automated scaling.",
-      techStack: ["React", "Node", "AWS", "Docker"],
-      link: "#",
-    },
-    {
       title: "ByteBooks",
       description:
         "An audiobook library platform with distinct user interfaces for admins, readers and creators. " +
