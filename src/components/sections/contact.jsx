@@ -27,12 +27,9 @@ export const Contact = () => {
       });
   };
   return (
-    <section
-      id="contact"
-      className="min-h-screen flex items-center justify-center py-20"
-    >
+    <section id="contact">
       <RevealOnScroll>
-        <div className="px-4 w-150">
+        <div className=" max-w-5xl px-4 mx-auto">
           <h2 className="text-center text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent">
             Contact Me!
           </h2>
@@ -77,7 +74,7 @@ export const Contact = () => {
                 className="w-full bg-white/5 border border-white/10 rounded px-4 py-3 text-white transition focus:outline-none focus:border-blue-500 focus:bg-blue-500/5"
                 placeholder="Your Message...."
                 onChange={(e) => {
-                  setFormData({ ...FormData, message: e.target.value });
+                  setFormData({ ...formData, message: e.target.value });
                 }}
               />
             </div>
